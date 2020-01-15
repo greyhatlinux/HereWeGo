@@ -14,16 +14,10 @@ var platform = new H.service.Platform({
     document.getElementById('mapContainer'),
     defaultLayers.vector.normal.map,
     {
-      zoom: 16,
+      zoom: 10,
       center: {lng: 77.21959, lat:28.63284}
     });
 
-    // create default UI
-    var ui = H.ui.UI.createDefault(map, defaultLayers);
-
-    
-    // ui.getControl('zoom');
-    // ui.getControl('scalebar');
 
 
 
@@ -109,57 +103,13 @@ var platform = new H.service.Platform({
     function(error) {
       alert(error.message);
     });
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> parent of 5b342e4... adding routing 2
 
 
 
 
-
-//   --------------------------------------------------------------------------------------------
-
-// var routingParams = {
-//     'mode': 'fastest;car;',
-//     'start': 'geo!28.62785,77.20852',
-//     'range': '300',
-//     'rangetype': 'time'
-//   };
-  
-//   // Define a callback function to process the isoline response.
-//   var onResult = function(result) {
-//     var center = new H.geo.Point(
-//         result.response.center.latitude,
-//         result.response.center.longitude),
-//       isolineCoords = result.response.isoline[0].component[0].shape,
-//       linestring = new H.geo.LineString(),
-//       isolinePolygon,
-//       isolineCenter;
-  
-//     // Add the returned isoline coordinates to a linestring:
-//     isolineCoords.forEach(function(coords) {
-//     linestring.pushLatLngAlt.apply(linestring, coords.split(','));
-//     });
-  
-//     // Create a polygon and a marker representing the isoline:
-//     isolinePolygon = new H.map.Polygon(linestring);
-//     isolineCenter = new H.map.Marker(center);
-  
-//     // Add the polygon and marker to the map:
-//     map.addObjects([isolineCenter, isolinePolygon]);
-  
-//     // Center and zoom the map so that the whole isoline polygon is
-//     // in the viewport:
-//     map.getViewModel().setLookAtData({bounds: isolinePolygon.getBoundingBox()});
-//   };
-  
-//   // Get an instance of the routing service:
-//   var router = platform.getRoutingService();
-  
-//   // Call the Routing API to calculate an isoline:
-//   router.calculateIsoline(
-//     routingParams,
-//     onResult,
-//     function(error) {
-//     alert(error.message);
-//     }
-//   );
-
-// ------------------------------------------------------------------------------------
