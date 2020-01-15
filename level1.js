@@ -1,6 +1,8 @@
+import { mykey } from "./keys";
+
 // Initialize the platform object:
 var platform = new H.service.Platform({
-  apikey: '31B9M1WOvs1BrJCjty0-DvXGQKKhJLPPqUX6RUPTb9I'
+  apikey: mykey;
 });
 
 // Obtain the default map types from the platform object
