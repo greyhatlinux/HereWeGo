@@ -1,4 +1,4 @@
-import { mykey } from './keys';
+
 
 // // Initialize the platform object:
 // var platform = new H.service.Platform({

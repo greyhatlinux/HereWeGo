@@ -1,25 +1,40 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    
+    
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
     type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
     type="text/javascript" charset="utf-8"></script>
+    
+
+    <!-- for better map UI -->
+
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+            type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css"
+            href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+
+    <!-- adding bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Police HeadQuarters</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Police HQ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Police HeadQuarters <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link active" href="#">HELP 1</a>
-            <a class="nav-item nav-link active" href="#">HELP 2</a>
-            <a class="nav-item nav-link " href="#">Help Reached</a>
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">HELP 1</a>
+            <a class="nav-item nav-link" href="#">HELP2 </a>
+            <a class="nav-item nav-link disabled" href="#">HELP REACHED</a>
           </div>
         </div>
       </nav>
