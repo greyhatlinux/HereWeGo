@@ -2,7 +2,7 @@ import { mykey } from './keys';
 
 // // Initialize the platform object:
 // var platform = new H.service.Platform({
-//   apikey: mykey;
+//   apikey: '31B9M1WOvs1BrJCjty0-DvXGQKKhJLPPqUX6RUPTb9I'
 // });
 
 // // Obtain the default map types from the platform object
@@ -22,7 +22,7 @@ import { mykey } from './keys';
 
 // Create a map:
 var platform = new H.service.Platform({
-  apikey: mykey
+  apikey: '31B9M1WOvs1BrJCjty0-DvXGQKKhJLPPqUX6RUPTb9I'
 });
 
 // Define a variable holding SVG mark-up that defines an icon image:

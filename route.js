@@ -1,8 +1,7 @@
-import { mykey } from './keys';
 
 // Instantiate a map and platform object:
 var platform = new H.service.Platform({
-    apikey: mykey;
+    apikey: '31B9M1WOvs1BrJCjty0-DvXGQKKhJLPPqUX6RUPTb9I'
   });
   // Retrieve the target element for the map:
   var targetElement = document.getElementById('mapContainer');
