@@ -39,13 +39,14 @@ var map = new H.Map(
   document.getElementById('mapContainer'),
   maptypes.vector.normal.map,
   {
-    zoom: 17,
+    zoom: 16,
     center: { lng: 86.13716, lat: 23.65904 }
   });
 
   var icon = new H.map.Icon(svgMarkup),
     coords = {lng: 77.2169, lat: 28.6341},
     marker = new H.map.Marker(coords, {icon: icon});
+    
 
   // Add the marker to the map and center the map at the location of the marker:
 map.addObject(marker);
